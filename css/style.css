@@ -5,9 +5,6 @@
   z-index: 99999;
 }
 
-nav {
-  position: sticky;
-}
 #spinner.show {
   transition: opacity 0.8s ease-out, visibility 0s linear 0s;
   visibility: visible;
@@ -16,14 +13,36 @@ nav {
 
 /* mulai css bawaan */
 
-.hero-section {
-  background: url("assets/images/hero-image.jpg") no-repeat center center;
-  background-size: cover;
-  height: 100vh;
+.hero-sectioner h1,
+p,
+a {
   color: white;
 }
 
-.hero-section {
+.card-hover {
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.card-hover:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.job-card {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.job-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.hero-sectioner {
+  background: url("assets/images/hero-image.jpg") no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.hero-sectioners {
   /* ... gaya Anda ... */
   border: 2px solid red;
   /* Tambahkan ini untuk debugging */

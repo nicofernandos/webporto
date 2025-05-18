@@ -15,7 +15,7 @@ $product_result = $conn->query($product_query);
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
-
+    <link rel="icon" href="assets/images/favicon.jpg" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -52,10 +52,11 @@ $product_result = $conn->query($product_query);
                     </button>
                     <div class="collapse navbar-collapse bg-light py-3" id="navbarCollapse">
                         <div class="navbar-nav ms-auto border-top">
-                            <a href="index.html" class="nav-item nav-link active">Home</a>
-                            <a href="about.html" class="nav-item nav-link">Portofolio</a>
-                            <a href="product.html" class="nav-item nav-link">Pendidikan</a>
-                            <a href="signin.html" class="nav-item nav-link">Pekerjaan</a>
+                            <a href="index.php" class="nav-item nav-link active">Home</a>
+                            <a href="#portofolio" class="nav-item nav-link">Portofolio</a>
+                            <a href="#pendidikan" class="nav-item nav-link">Pendidikan</a>
+                            <a href="#pekerjaan-section" id="link-pekerjaan" class="nav-item nav-link">Pekerjaan</a>
+                            <a href="admin/login.php" id="link-pekerjaan" class="nav-item nav-link">Login</a>
                         </div>
                     </div>
                 </nav>
@@ -72,12 +73,12 @@ $product_result = $conn->query($product_query);
             </ol>
             <div class="carousel-inner" role="listbox">
                 <div class="carousel-item active">
-                    <img src="assets/images/bakso.jpg" class="img-fluid" alt="Keindahan Karimun Jawa">
+                    <img src="assets/images/background.jpg" class="img-fluid" alt="Keindahan Karimun Jawa">
                     <div class="carousel-caption">
                         <div class="p-3" style="max-width: 900px;">
-                            <h4 class="text-primary text-uppercase mb-3">Toko Olahraga</h4>
-                            <h1 class="display-1 text-capitalize text-dark mb-3">Menjual Perlengkapan Olahraga</h1>
-                            <p class="mx-md-5 fs-4 px-4 mb-5 text-dark">Termurah dan Terjangkau</p>
+                            <h4 class="text-primary text-uppercase mb-3">Portofolio Pribadi</h4>
+                            <h1 class="display-1 text-capitalize text-dark mb-3">Saya merupakan orang Profesional</h1>
+                            <p class="mx-md-5 fs-4 px-4 mb-5 text-dark">Di Bidangnya</p>
                             <div class="d-flex align-items-center justify-content-center">
                                 <a class="btn btn-primary btn-primary-outline-0 rounded-pill py-3 px-5"
                                     href="#about">Learn More</a>
@@ -86,12 +87,12 @@ $product_result = $conn->query($product_query);
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="img/bg2.jpg" class="img-fluid" alt="Snorkeling di Karimun Jawa">
+                    <img src="assets/images/backgroundporto.jpg" class="img-fluid" alt="Snorkeling di Karimun Jawa">
                     <div class="carousel-caption">
                         <div class="p-3" style="max-width: 900px;">
-                            <h4 class="text-primary text-uppercase mb-3">Toko Olahraga</h4>
-                            <h1 class="display-1 text-capitalize text-dark mb-3">Menjual Perlengkapan Olahraga</h1>
-                            <p class="mx-md-5 fs-4 px-4 mb-5 text-dark">Termurah dan Terjangkau</p>
+                            <h4 class="text-primary text-uppercase mb-3">Profesional</h4>
+                            <h1 class="display-1 text-capitalize text-dark mb-3">Berikut Pengalaman dan Pendidikan</h1>
+                            <p class="mx-md-5 fs-4 px-4 mb-5 text-dark">Profesional</p>
                             <div class="d-flex align-items-center justify-content-center">
                                 <a class="btn btn-primary btn-primary-outline-0 rounded-pill py-3 px-5"
                                     href="#about">Learn More</a>

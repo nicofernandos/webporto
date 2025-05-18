@@ -8,14 +8,13 @@ if (!isset($_SESSION['admin'])) {
 include '../db/connection.php';
 
 // Get the product ID from URL
-$idmakanan = isset($_GET['id']) ? intval($_GET['id']) : 0;
+$idpendidikan = isset($_GET['id']) ? intval($_GET['id']) : 0;
 
 // Delete the product from the database
-if ($idmakanan) {
-    $query = "DELETE FROM Makanan WHERE idmakanan = $idmakanan";
+if ($idpendidikan) {
+    $query = "DELETE FROM pendidikan WHERE idpendidikan = $idpendidikan";
     if ($conn->query($query)) {
-        header("Location: crudmakanan.php"); // Redirect to product management page
-    } else {
+        header("Location: crudpendidikan.php");
         echo "Error deleting record: " . $conn->error;
     }
 }

@@ -25,7 +25,9 @@ include '../db/connection.php';
         <br>
         <div class="row justify-content-center">
             <div class="col-md-4">
-                <a href="crudmakanan.php" class="btn btn-info w-100 mb-3">Kelola Makanan</a>
+                <a href="crudportofolio.php" class="btn btn-info w-100 mb-3">Kelola Portofolio</a>
+                <a href="crudpendidikan.php" class="btn btn-info w-100 mb-3">Kelola Pendidikan</a>
+                <a href="crudpekerjaan.php" class="btn btn-info w-100 mb-3">Kelola Pendidikan</a>
                 <a href="logout.php" class="btn btn-danger w-100">Keluar</a>
             </div>
         </div>
