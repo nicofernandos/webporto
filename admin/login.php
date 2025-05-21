@@ -14,12 +14,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $result = $stmt->get_result();
     $admin = $result->fetch_assoc();
 
-    // Check password
-    if ($admin && $admin['password']) {
+    if ($admin && $admin['password'] === $password) { 
         $_SESSION['admin'] = $admin['id'];
         header("Location: index.php");
+        exit(); 
     } else {
-        $error = "Invalid username or password!";
+        $error = "Salah username or password!";
     }
 }
 
@@ -30,21 +30,25 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
     <title>Admin Login</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
     <style>
-        .login-container {
-            max-width: 400px;
-            margin: auto;
-            padding-top: 100px;
-        }
+    body {
+        background-image: url("../assets/images/backgroundlogin.jpg");
+    }
     </style>
+
+
 </head>
 
 <body>
 
-    <div class="login-container">
+    <div class="card login-card">
         <h2 class="text-center">Admin Login</h2>
         <?php if (isset($error)) {
             echo "<div class='alert alert-danger'>$error</div>";
@@ -59,20 +63,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <input type="password" class="form-control" id="password" name="password" required>
             </div>
             <button type="submit" class="btn btn-primary w-100">Login</button>
-            <br>
-            <center>
-                <br>
+            <div class="mt-3 text-center">
                 <a href="../index.php">Kembali ke Home</a>
                 <br>
-                <br>
-                <span>Username : admin | Password : admin</span>
-            </center>
+                <small class="text-muted mt-2 d-block">Username : admin | Password : admin</small>
+            </div>
         </form>
     </div>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcqC1x2bI7t+Q+jYwS6tL2xS"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -11,7 +11,7 @@ $product_result = $conn->query($product_query);
 
 <head>
     <meta charset="utf-8">
-    <title>Toko Olahraga</title>
+    <title>Website Portofolio</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -25,14 +25,16 @@ $product_result = $conn->query($product_query);
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 </head>
 
@@ -56,6 +58,7 @@ $product_result = $conn->query($product_query);
                             <a href="#portofolio" class="nav-item nav-link">Portofolio</a>
                             <a href="#pendidikan" class="nav-item nav-link">Pendidikan</a>
                             <a href="#pekerjaan-section" id="link-pekerjaan" class="nav-item nav-link">Pekerjaan</a>
+                            <a href="#kontak" class="nav-item nav-link">Contact</a>
                             <a href="admin/login.php" id="link-pekerjaan" class="nav-item nav-link">Login</a>
                         </div>
                     </div>
