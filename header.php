@@ -43,29 +43,30 @@ $product_result = $conn->query($product_query);
     <div class="container-fluid sticky-top px-0 fixed-top">
         <div class="container-fluid bg-light">
             <div class="container px-0">
-                <nav class="navbar navbar-light navbar-expand-xl">
+                <nav class="navbar navbar-light navbar-expand-lg">
                     <a href="index.html" class="navbar-brand d-flex align-items-center">
                         <i class='bx bx-briefcase bx-lg text-primary me-2'></i>
                         <h1 class="text-primary display-6 mb-0">Portofolio</h1>
                     </a>
                     <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarCollapse">
-                        <span class="fa fa-bars text-primary"></span>
+                        <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse bg-light py-3" id="navbarCollapse">
                         <div class="navbar-nav ms-auto border-top">
                             <a href="index.php" class="nav-item nav-link active">Home</a>
                             <a href="#portofolio" class="nav-item nav-link">Portofolio</a>
                             <a href="#pendidikan" class="nav-item nav-link">Pendidikan</a>
-                            <a href="#pekerjaan-section" id="link-pekerjaan" class="nav-item nav-link">Pekerjaan</a>
+                            <a href="#pekerjaan-section" class="nav-item nav-link">Pekerjaan</a>
                             <a href="#kontak" class="nav-item nav-link">Contact</a>
-                            <a href="admin/login.php" id="link-pekerjaan" class="nav-item nav-link">Login</a>
+                            <a href="admin/login.php" class="nav-item nav-link">Login</a>
                         </div>
                     </div>
                 </nav>
             </div>
         </div>
     </div>
+
 
     <div class="container-fluid carousel-header px-0">
         <div id="carouselId" class="carousel slide" data-bs-ride="carousel">

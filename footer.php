@@ -21,24 +21,23 @@
         </div>
     </div>
 </footer>
-<a href="#" class="btn btn-primary btn-primary-outline-0 btn-md-square rounded-circle back-to-top"><i
-        class="fa fa-arrow-up"></i></a>
 
+<a href="#" class="btn btn-primary btn-primary-outline-0 btn-md-square rounded-circle back-to-top">
+    <i class="fa fa-arrow-up"></i>
+</a>
 
 <script src="java/custom.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcqC1x2bI7t+Q+jYwS6tL2xS" crossorigin="anonymous">
+    integrity="sha384-w76A2z02tPqdjYvx1+gcVtU0Y1ZKK3f1L1G1Uo8yY4G2GmU5VRgtrpXWRCUWhD8Q" crossorigin="anonymous">
 </script>
-
 <script src="lib/wow/wow.min.js"></script>
 <script src="lib/easing/easing.min.js"></script>
 <script src="lib/waypoints/waypoints.min.js"></script>
 <script src="lib/counterup/counterup.min.js"></script>
 <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 <script src="lib/lightbox/js/lightbox.min.js"></script>
+
 
 <script src="js/main.js"></script>
 </body>
